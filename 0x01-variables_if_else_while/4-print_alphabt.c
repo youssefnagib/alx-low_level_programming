@@ -1,12 +1,4 @@
 #include <stdio.h>
-/**
- * main - Entry point
- *
- * Description: msh 3arf bzabt;
- *
- * return: 0 success;
- *
- */
 
 int main(void)
 {
