@@ -3,7 +3,7 @@
  * jack_bauer - print every single min in the day
  */
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int min, hr;
 
