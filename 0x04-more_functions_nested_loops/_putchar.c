@@ -1,4 +1,4 @@
-#include <unstd.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * _putchar- write chracter c to stdio
