@@ -2,7 +2,7 @@
 /***/
 void rev_string(char *s)
 {
-	int c, m;
+	int c, m, m1;
 	char tmp;
 
 	for (m = 0; s[m] != '\0'; ++m);
