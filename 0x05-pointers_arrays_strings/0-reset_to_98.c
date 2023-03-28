@@ -2,6 +2,6 @@
 /***/
 void reset_to_98(int *n)
 {
-	int *ptr;
-	*ptr = 98;
+	int *ptr = &n;
+	*ptr = '98';
 }
