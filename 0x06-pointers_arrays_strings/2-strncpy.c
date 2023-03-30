@@ -1,5 +1,13 @@
 #include "main.h"
-/***/
+/**
+ * _strncpy - copy string
+ *
+ * @dest: pointer discription input
+ *
+ * @src: pointer source input
+ *
+ * Return: dest
+ */
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
