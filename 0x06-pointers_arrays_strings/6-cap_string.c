@@ -2,7 +2,7 @@
 /**
  * cap_string - function caplitze
  *
- * @S: string
+ * @s: string
  *
  * Return: char
  */
