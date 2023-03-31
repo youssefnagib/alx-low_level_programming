@@ -1,5 +1,11 @@
 #include "main.h"
-/***/
+/**
+ * cap_string - function caplitze
+ *
+ * @S: string
+ *
+ * Return: char
+ */
 char *cap_string(char *s)
 {
 	int i;
