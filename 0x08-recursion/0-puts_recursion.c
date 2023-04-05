@@ -2,5 +2,5 @@
 /***/
 void _puts_recursion(char *s)
 {
-	printf("%d\n", *s);
+	_putchar("%d\n", *s);
 }
