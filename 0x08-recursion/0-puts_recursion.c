@@ -1,5 +1,9 @@
 #include "main.h"
-/***/
+/**
+ * _puts_recursion - functin that print string
+ *
+ * @s: in put source
+ */
 void _puts_recursion(char *s)
 {
 	if (s[0] != '\0')
