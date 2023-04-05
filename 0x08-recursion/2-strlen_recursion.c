@@ -1,5 +1,11 @@
 #include "main.h"
-/***/
+/**
+ * _strlen_recursion - function that determine len
+ *
+ * @s: input string
+ *
+ * Return: lenth of string
+ */
 int _strlen_recursion(char *s)
 {
 	if (s[0] != '\0')
