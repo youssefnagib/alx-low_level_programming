@@ -1,5 +1,12 @@
 #include "main.h"
-/***/
+/**
+ * _pow_recursion - function that power
+ *
+ * @x: num
+ * @y: num
+ *
+ * Return: resalt
+ */
 int _pow_recursion(int x, int y)
 {
 	if (y == 0)
