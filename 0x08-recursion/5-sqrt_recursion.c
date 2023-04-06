@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- * _sqrt_recursion - function
- *
  * checker - checks the input number
  *
- * @n: number is squared and compared against base
+ * @n: number is squared and compared
  *
  * @base: base number to check
  *
@@ -18,6 +16,13 @@ int checker(int n, int base)
 		return (-1);
 	return (checker(n + 1, base));
 }
+/**
+ * _sqrt_recursion - return the natural square root
+ *
+ * @n: number to check
+ *
+ * Return: the natural
+ */
 int _sqrt_recursion(int n)
 {
 	return (checker(1, n));
