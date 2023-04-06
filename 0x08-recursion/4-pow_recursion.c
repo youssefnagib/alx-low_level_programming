@@ -11,6 +11,6 @@ int _pow_recursion(int x, int y)
 	}
 	else
 	{
-		printf("%d", sum)
+		printf("%d", sum);
 	}
 }
