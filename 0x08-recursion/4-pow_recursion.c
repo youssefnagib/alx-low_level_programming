@@ -6,4 +6,5 @@ int _pow_recursion(int x, int y)
 	int sum = pow(x, y);
 	
 		printf("%d", sum);
+		return (sum);
 }
