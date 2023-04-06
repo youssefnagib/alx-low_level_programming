@@ -2,6 +2,8 @@
 /**
  * _sqrt_recursion - function
  *
+ * checker - checks the input number
+ *
  * @n: number is squared and compared against base
  *
  * @base: base number to check
