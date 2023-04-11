@@ -6,7 +6,7 @@
  * 
  * @argc: int
  *
- * @argv: array 
+ * @argv: array
  *
  * Return: 1 , 0 otherwise
  */
