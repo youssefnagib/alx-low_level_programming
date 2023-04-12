@@ -10,25 +10,16 @@
  *
  * Return: a pointer to array
  */
-
 char *create_array(unsigned int size, char c)
-{
-	if (size == 0)
-{
-	return (NULL);
-}
 
-	char *arr = (char *) malloc(size * sizeof(char));
-
-	if (arr == NULL)
 {
-	return (NULL);
-}
+	char *str;
+	unsigned int i;
 
-	for (unsigned int i = 0; i < size; i++)
-{
-	arr[i] = c;
-}
-
-	return (arr);
+	str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+		str[i] = c;
+	return (str);
 }
