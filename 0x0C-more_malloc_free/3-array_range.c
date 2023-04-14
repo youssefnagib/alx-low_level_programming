@@ -9,8 +9,6 @@
  *
  * Return: pointer
  */
-
-
 int *array_range(int min, int max)
 {
 	int *array = NULL;
