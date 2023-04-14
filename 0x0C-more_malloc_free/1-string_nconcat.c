@@ -1,6 +1,16 @@
 #include "main.h"
 #include <stdlib.h>
-/***/
+/**
+ * string_nconcat - two strings
+ *
+ * @s1: pointer to 1 string
+ *
+ * @s2: pointer to 2 string
+ *
+ * @n: num of bytes
+ *
+ * Return: pointer
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *strnew = NULL;
