@@ -1,6 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 
+#include <stdio.h>
 int _putchar(char c);
 /**
  * struct dog - struct dog
