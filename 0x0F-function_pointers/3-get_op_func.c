@@ -1,15 +1,15 @@
 #include"3-calc.h"
-/**
-* get_op_func - get the operator and redirect to the func.
-*
-*  @s: the operator
-*
-*   Description: get the operator and redirect to the func.)?
-*
-*   section header: 3-calc.h
-*
-*   Return: return null or the function to do.
-*/
+ /**
+ * get_op_func - get the operator and redirect to the func.
+ *
+ *  @s: the operator
+ *
+ *   Description: get the operator and redirect to the func.)?
+ *
+ *   section header: 3-calc.h
+ *
+ *   Return: return null or the function to do.
+ */
 
 int (*get_op_func(char *s))(int, int)
 {
@@ -21,9 +21,9 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int i= 0;
 
-	i = 0;
+
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
 
