@@ -1,4 +1,4 @@
-#include "function_pointers."
+#include "function_pointersi.h"
 /**
  * array_iterator -  maps array through fun pointer
  *
