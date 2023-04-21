@@ -9,22 +9,19 @@
  *
  * @...: variable num of strs to printed
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list nums;
-	unsigned int index;
+	va_list valist;
+	unsigned int i;
 
-	va_start(nums, n);
-
-	for (index = 0; index < n; index++)
+	va_start(valist, n);
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(nums, int));
-
-		if (index != (n - 1) && separator != NULL)
-			printf("%s", separator);
+		if (i != (n - 1) && separator != NULL)
+			printf("%d%s", va_arg(valist, unsigned int), separator);
+		else
+			printf("%d", va_arg(valist, unsigned int));
 	}
-
 	printf("\n");
-
-	va_end(nums);
+	va_end(valist);
 }
