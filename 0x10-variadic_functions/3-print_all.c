@@ -1,92 +1,50 @@
 #include "variadic_functions.h"
 
 /**
- * t_char - print a char
+ * print_all -print of the things
  *
- * @va: char
- */
-void t_char(va_list va)
-{
-	int c;
-
-	c = va_arg(va, int);
-	printf("%c", c);
-}
-
-/**
- * t_integer - print integer
- * @va: num
- */
-void t_integer(va_list va)
-{
-	printf("%d", va_arg(va, int));
-}
-
-/**
- * t_float - print a float
+ * @format: list of arg types
  *
- * @va: float num
- */
-void t_float(va_list va)
-{
-	double c;
-
-	c = va_arg(va, double);
-	printf("%f", c);
-}
-/**
- * t_string - print a str
- * @va: ptr to str
- */
-void t_string(va_list va)
-{
-	char *s = va_arg(va, char *);
-
-	if (s == NULL)
-	{
-		printf("(nil)");
-		return;
-	}
-	printf("%s", s);
-}
-
-
-/**
- * print_all - prints all things
- * @format: format
+ * Return: 0 (succss)
  */
 void print_all(const char * const format, ...)
 {
-	int i, j, count;
 	va_list valist;
-	types difftypes[] = {
-		{'c', t_char},
-		{'i', t_integer},
-		{'f', t_float},
-		{'s', t_string},
-		};
-	char *s = "";
+	int n = 0, i = 0;
+	char *sep = ", ";
+	char *str;
 
-	i = 0;
-	count = 0;
 	va_start(valist, format);
-	while (format != NULL && format[i])
-	{
-		j = 0;
-		while (j < 4)
-		{
-			if (format[i] == difftypes[j].t)
-			{
-				printf("%s", s);
-				difftypes[j].f(valist);
-				s = ", ";
-				count++;
-				break;
-			}
-			j++;
 
-		}
+	while (format && format[i])
 		i++;
+
+	while (format && format[n])
+	{
+		if (n  == (i - 1))
+		{
+			sep = "";
+		}
+		switch (format[n])
+		{
+		case 'c':
+			printf("%c%s", va_arg(valist, int), sep);
+			break;
+		case 'i':
+			printf("%d%s", va_arg(valist, int), sep);
+			break;
+		case 'f':
+			printf("%f%s", va_arg(valist, double), sep);
+			break;
+		case 's':
+			str = va_arg(valist, char *);
+			if (str == NULL)
+				str = "(nil)";
+			printf("%s%s", str, sep);
+			break;
+		}
+		n++;
 	}
 	printf("\n");
+	va_end(valist);
 }
