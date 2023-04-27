@@ -5,6 +5,15 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdarg.h>
+/**
+ * struct list_s - singly linked list
+ *
+ * @str: string -
+ *		 (malloc'ed string)
+ * @len: length of the str
+ *
+ * @next: points to the next
+ */
 
 typedef struct list_s
 {
