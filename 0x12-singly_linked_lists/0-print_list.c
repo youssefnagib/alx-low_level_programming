@@ -1,11 +1,12 @@
-nclude "lists.h"
+#include "lists.h"
 
 /**
- *  * print_list - Entry point
- *   * Description: Prints all the elements of list_t list
- *    * @h: Pointer to head of the list
- *     * Return: Number of nodes in list
- *      */
+ * print_list - print all lists
+ *
+ * @h: Pointer to head
+ *
+ * Return: num
+ */
 
 size_t print_list(const list_t *h)
 {
