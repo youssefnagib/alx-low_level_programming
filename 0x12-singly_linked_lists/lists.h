@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <stdarg.h>
 /**
  * struct list_s - singly linked list
  *
