@@ -1,19 +1,20 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
+
 /**
- * struct list_s - singly linked list
+ * struct list_s - singly linked list.
  *
  * @str: string -
- *		 (malloc'ed string)
- * @len: length of the str
+ *  (malloc'ed string).
  *
- * @next: points to the next
+ * @len: length.
+ *
+ * @next: points to the nexte.
  */
-
 typedef struct list_s
 {
 	char *str;
@@ -28,4 +29,5 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
 
-#endif // LIST_H
+
+#endif
