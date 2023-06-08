@@ -15,9 +15,8 @@ void _print_rev_recursion(char *s)
 	}
 	if (s[0] != '\0')
 	{
-		s[0] == t;
+		s[0] = t;
 		 s--;
 		 t++;
 	}
-	return 1;
 }
