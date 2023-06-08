@@ -1,29 +1,37 @@
 #include "main.h"
 /**
- * checker - check number
- *
- * @n: num quared and compared
- *
- * @base: base num check
- *
- * Return: natural num base
- */
-int checker(int n, int base)
-{
-		if (n * n == base)
-					return (n);
-			if (n * n > base)
-						return (-1);
-				return (checker(n + 1, base));
-}
-/**
- * _sqrt_recursion - return the natural
+ * is_prime_number - returns true if prime
  *
  * @n: num
  *
- * Return: natural
+ * Return: true if prime
  */
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
-		return (checker(1, n));
+	int start = n / 2;
+	
+	if (n <= 1)
+		return (0);
+	return (is_prime(n, start));
+}
+
+/**
+ * is_prime - returns 1 if prime
+ *
+ * @n: num
+ *
+ * @start: num to start
+ *
+ * Return: 1 if prime
+ */
+
+int is_prime(int n, int start)
+{
+	if (start <= 1)
+		return (1);
+
+	else if (n % start == 0)
+		return (0);
+
+	return (is_prime(n, start - 1));
 }
