@@ -1,5 +1,9 @@
 #include "main.h"
-/***/
+/**
+ * _strlen_recursion - func to know Lighth
+ *
+ * @s: in put str
+ */
 int _strlen_recursion(char *s)
 {
 	int l = 0;
