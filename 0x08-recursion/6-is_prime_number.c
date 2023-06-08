@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * checker - check number
  *
