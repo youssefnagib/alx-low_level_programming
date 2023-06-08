@@ -32,6 +32,5 @@ int is_prime(int n, int start)
 
 	else if (n % start == 0)
 		return (0);
-
 	return (is_prime(n, start - 1));
 }
