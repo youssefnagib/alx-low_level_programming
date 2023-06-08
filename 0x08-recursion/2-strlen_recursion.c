@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * _strlen_recursion - func to know Lighth
+ * _strlen_recursion - func to know Leghth
  *
  * @s: in put str
+ *
+ * Return: len
  */
 int _strlen_recursion(char *s)
 {
