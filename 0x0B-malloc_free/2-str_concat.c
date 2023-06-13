@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 /**
  * *str_concat - function that returns a pointer to a
  * 2 dimensional array of integers.
