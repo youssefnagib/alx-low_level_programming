@@ -1,4 +1,4 @@
-#include "main.h"*create_array
+#include "main.h"
 #include <stdlib.h>
 /**
  * *create_array - creates an array
