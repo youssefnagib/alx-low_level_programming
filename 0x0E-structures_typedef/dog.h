@@ -4,5 +4,5 @@ typedef struct{
 	char * name;
 	float age;
 	char * owner;
-} my_dog;
+} dog;
 #endif
