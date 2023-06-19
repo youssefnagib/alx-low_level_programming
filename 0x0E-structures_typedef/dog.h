@@ -4,5 +4,5 @@ struct{
 	char * name;
 	float age;
 	char * owner;
-} struct dog; 
+}; 
 #endif
