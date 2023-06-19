@@ -19,6 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *max = malloc(sizeof(dog_t));
 	if (max == NULL)
 	{
+
 		return (NULL);
 	}
 	max->name = malloc(sizeof(char) * (strlen(name) + 1));
