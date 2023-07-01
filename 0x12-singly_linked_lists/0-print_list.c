@@ -5,7 +5,6 @@
  * list_t: list
  *
  * @h: ptr
- *
  * Return: num
  */
 size_t print_list(const list_t *h)
