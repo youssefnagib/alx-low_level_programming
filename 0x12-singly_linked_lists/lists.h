@@ -6,6 +6,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct list_s - singly
+ * @str: string
+ * @len: length
+ * @next: points
+ */
 typedef struct list_s
 {
 	char *str;
