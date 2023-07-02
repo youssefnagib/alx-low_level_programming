@@ -1,6 +1,6 @@
 #include "lists.h"
-/*
- * add_node - add node
+/**
+ * add_node - func that added node
  * @head: Pointer list
  * @str: String
  * Return: address
