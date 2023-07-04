@@ -5,7 +5,12 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-
+/**
+ * struct listint_s - func node
+ *
+ * @n: node
+ * @next: next node
+ */
 typedef struct listint_s
 {
 	int n;
