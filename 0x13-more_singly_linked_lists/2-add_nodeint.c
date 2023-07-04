@@ -8,7 +8,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		= ((struct Node *)malloc(sizeof(struct Node));
 	newNode->data = n;
 	newNode->next = (*head);
-	head = newNode;
+	(*head) = newNode;
 	if (n != NULL)
 		return (*head);
 	else
