@@ -8,14 +8,14 @@
 
 void print_binary(unsigned long int n)
 {
-	int d, count = 0;
-	unsigned long int c;
+	int i, count = 0;
+	unsigned long int current;
 
-	for (d = 63; d >= 0; d--)
+	for (i = 63; i >= 0; i--)
 	{
-		c = n >> d;
+		current = n >> i;
 
-		if (c & 1)
+		if (current & 1)
 		{
 			_putchar('1');
 			count++;
