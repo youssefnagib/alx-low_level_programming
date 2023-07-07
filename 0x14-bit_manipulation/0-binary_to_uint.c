@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * binary_to_uint - func that convert bin to dec
  *
@@ -6,10 +7,11 @@
  *
  * Return: reslute if not NULL
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int r = 0;
-	int i;
+	unsigned int i;
 
 	if (!b)
 		return (0);
