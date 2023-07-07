@@ -8,15 +8,15 @@
 
 void print_binary(unsigned long int n)
 {
-	int d = 0;
+	int i = 0;
 
-	while ((n >> d) > 1)
+	while ((n >> i) > 1)
 	{
-		d++;
+		i++;
 	}
-	while (d >= 0)
+	while (i >= 0)
 	{
-		if ((n >> d) & 1)
+		if ((n >> i) & 1)
 		{
 			_putchar('1');
 		}
@@ -24,6 +24,6 @@ void print_binary(unsigned long int n)
 		{
 			_putchar('0');
 		}
-		d--;
+		i--;
 	}
 }
