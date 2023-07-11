@@ -1,12 +1,15 @@
 #include "main"
+
 /**
  * read_textfile - read text
  *
  * @filename: name
  *
  * @letters: letters
- * Return : 0
+ *
+ * Return: the actual number of letters it could read and print
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
