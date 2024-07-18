@@ -23,7 +23,7 @@ for (i = start; i < end; i++)
 printf("%d, ", array[i]);
 }
 printf("%d\n", array[end]);
-printf("\n");
+
 if (array[mid] == value)
 return (mid);
 
